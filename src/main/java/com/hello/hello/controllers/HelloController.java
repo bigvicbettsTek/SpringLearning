@@ -4,6 +4,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class HelloController {
+
   @GetMapping
   public String getHello() {
     return "Hello World";
@@ -12,5 +13,9 @@ public class HelloController {
   @PostMapping
   public String postHello(@RequestBody String name) {
     return "Hello " + name;
+  }
+
+  public Boolean returnNull() {
+    return null;
   }
 }
