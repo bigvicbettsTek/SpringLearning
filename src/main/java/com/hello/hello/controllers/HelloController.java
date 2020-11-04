@@ -15,6 +15,10 @@ public class HelloController {
     return "Hello " + name;
   }
 
+  public Integer returnNull() {
+    return null;
+  }
+
   public int d(int a, int b) {
     if (b == 0) return Integer.MAX_VALUE;
     else return a / b;
