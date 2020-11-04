@@ -94,6 +94,25 @@
 					</dependency>
 				</dependencies>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-pmd-plugin</artifactId>
+				<version>3.13.0</version>
+				<executions>
+					<execution>
+						<phase>verify</phase>
+						<goals>
+							<goal>check</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<rulesets>
+						<ruleset>/rulesets/java/braces.xml</ruleset>
+						<ruleset>/rulesets/java/naming.xml</ruleset>
+					</rulesets>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 

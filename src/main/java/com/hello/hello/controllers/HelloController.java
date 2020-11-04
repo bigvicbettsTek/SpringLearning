@@ -15,7 +15,7 @@ public class HelloController {
     return "Hello " + name;
   }
 
-  public Boolean returnNull() {
-    return null;
-  }
+  //  public Boolean returnNull() {
+  //    return null;
+  //  }
 }
